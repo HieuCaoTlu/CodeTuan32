@@ -4,11 +4,13 @@ class Contact {
     private int avatar;
     private String title;
     private String description;
+    private String quote;
 
-    public Contact(String title, String description, int avatar) {
+    public Contact(String title, String description, int avatar, String quote) {
         this.title = title;
         this.description = description;
         this.avatar = avatar;
+        this.quote = quote;
     }
 
     public int getAvatar() {
@@ -33,5 +35,9 @@ class Contact {
 
     public void setPhone(String description) {
         this.description = description;
+    }
+
+    public String getQuote() {
+        return quote;
     }
 }
